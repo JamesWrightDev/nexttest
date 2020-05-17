@@ -6,7 +6,7 @@ const Search = ({ data }) => {
   return (
     <div className="container">
       <Link href="/">
-        <a>Home</a>
+        <a>Search</a>
       </Link>
       {
         data &&  <li>{data.title}</li>
