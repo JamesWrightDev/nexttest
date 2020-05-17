@@ -8,13 +8,18 @@ const Search = ({ data }) => {
       <Link href="/">
         <a>Home</a>
       </Link>
-       <li>{data.title}</li>
+      {
+        data &&  <li>{data.title}</li>
+      }
     </div>
   );
 };
 
 Search.getInitialProps = async (ctx) => {
   const { location } = ctx.query;
+  if(!location) {
+    return{};
+  }
   const res = await fetch(
     `https://jsonplaceholder.typicode.com/posts/${location}`
   );
