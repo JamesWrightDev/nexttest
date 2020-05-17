@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Link from "next/link";
-import {wrapper} from '../store/store';
 import { useDispatch } from 'react-redux'
+import styled from 'styled-components';
 
 const Home = () => {
   const dispatch = useDispatch();
@@ -11,6 +11,7 @@ const Home = () => {
   }
   return (
     <div className="container">
+      <Title>Home</Title>
       <Link href="/search">
         <a className="text-4xl">Search</a>
       </Link>
@@ -27,6 +28,10 @@ const Home = () => {
     </div>
   );
 }
+
+const Title = styled.h1`
+  color: red;
+`;
 
 export default Home;
 
