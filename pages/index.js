@@ -12,12 +12,14 @@ const Home = () => {
   return (
     <div className="container">
       <Link href="/search">
-        <a>Search</a>
+        <a className="text-4xl">Search</a>
       </Link>
+      <br/>
       <Link href="/static">
         <a>Static</a>
       </Link>
-      <button onClick={() => handleClick()}>Click</button>
+      <br/>
+      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={() => handleClick()}>Click</button>
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
@@ -26,5 +28,5 @@ const Home = () => {
   );
 }
 
-export default wrapper.withRedux((Home));
+export default Home;
 
