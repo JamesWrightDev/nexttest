@@ -23,6 +23,6 @@ export async function getServerSideProps(context) {
     `https://jsonplaceholder.typicode.com/posts`
   );
   const json = await res.json();
-  return { data: json };
+  return { props: {data: json} };
 };
 export default Search;
