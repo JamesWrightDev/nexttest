@@ -5,7 +5,7 @@ const Search = ({ data }) => {
   return (
     <div className="container">
       <Link href="/">
-        <a>Search</a>
+        <a>Search123</a>
       </Link>
       {
         data.map(item => {
