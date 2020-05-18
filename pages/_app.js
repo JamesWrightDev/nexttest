@@ -1,6 +1,7 @@
 import { Provider } from 'react-redux'
 import { store } from '../store/store';
 import Head from 'next/head'
+import '../styles/skeleton.css';
 
 const App = ({ Component, pageProps }) => {
   return (

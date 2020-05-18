@@ -11,7 +11,7 @@ const Home = () => {
   }
   return (
     <div className="container">
-      <Title>Home</Title>
+      <h1>Home</h1>
       <Link href="/search">
         <a className="text-4xl">Search</a>
       </Link>
@@ -28,10 +28,6 @@ const Home = () => {
     </div>
   );
 }
-
-const Title = styled.h1`
-  color: red;
-`;
 
 export default Home;
 
