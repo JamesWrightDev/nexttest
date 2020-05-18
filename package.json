@@ -6,9 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start -p $PORT",
+    "local": "next start",
     "export": "next export"
   },
   "dependencies": {
+    "cacheable-response": "^2.0.9",
     "next": "9.4.1",
     "next-redux-wrapper": "^6.0.0",
     "react": "16.13.1",
