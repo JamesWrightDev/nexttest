@@ -18,8 +18,7 @@ const Search = ({ data }) => {
   );
 };
 
-Search.getInitialProps = async (ctx) => {
-
+export async function getServerSideProps(context) {
   const res = await fetch(
     `https://jsonplaceholder.typicode.com/posts`
   );
